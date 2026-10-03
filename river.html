@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>River Rejuvenation Retreat | Private Skagit River Camping in Concrete, WA</title>
+<meta name="description" content="A private, cleared acre right on the Skagit River in Concrete, Washington. Private river access, gazebo, running water and room for up to 24 guests. 98% of campers recommend. $120/night.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --deep:#13302d;
+  --deep-2:#1b403c;
+  --river:#1f6b68;
+  --glacier:#86c9c0;
+  --mist:#edf1ec;
+  --mist-2:#dfe6df;
+  --paper:#f9f8f3;
+  --ink:#132320;
+  --muted:#566763;
+  --salmon:#e0663f;
+  --salmon-dk:#c24f2b;
+  --line:rgba(19,48,45,.14);
+  --radius:18px;
+  --shadow:0 18px 40px -18px rgba(19,48,45,.38);
+  --ease:cubic-bezier(.22,.8,.26,1);
+  --display:"Sora",system-ui,sans-serif;
+  --body:"Manrope",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);color:var(--ink);background:var(--mist);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--salmon);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--river)}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.05;letter-spacing:-.025em}
+h2{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;color:var(--deep)}
+.lead{color:var(--muted);font-size:1.07rem;max-width:56ch}
+.sec{padding:clamp(72px,10vw,118px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{margin-top:10px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;text-decoration:none;font-weight:800;border-radius:999px;padding:14px 26px;transition:transform .3s var(--ease),background .3s,box-shadow .3s,color .3s,border-color .3s}
+.btn-go{background:var(--salmon);color:#fff;box-shadow:0 10px 24px -10px rgba(224,102,63,.75)}
+.btn-go:hover{background:var(--salmon-dk);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--deep);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--deep);background:#fff}
+.btn i{transition:transform .3s var(--ease)}
+.btn:hover i.fa-arrow-right{transform:translateX(4px)}
+
+/* Nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s,box-shadow .35s}
+.nav.scrolled{background:rgba(249,248,243,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--deep)}
+.logo .mark{width:42px;height:42px;border-radius:13px;background:var(--deep);color:var(--glacier);display:grid;place-items:center;font-size:1.05rem;transition:transform .5s var(--ease)}
+.logo:hover .mark{transform:rotate(-8deg) scale(1.05)}
+.logo b{font-family:var(--display);font-weight:800;font-size:1.08rem;line-height:1.05;display:block}
+.logo small{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--river)}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.94rem;padding:9px 14px;border-radius:999px;transition:background .25s}
+.nav-links a:hover{background:rgba(19,48,45,.07)}
+.nav-links .btn{padding:10px 20px;margin-left:8px}
+.nav-links .btn:hover{background:var(--salmon-dk)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font-size:1.1rem;color:var(--deep)}
+
+/* Hero */
+.hero{padding:118px 0 70px;position:relative}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:620px;background:radial-gradient(60% 70% at 85% 30%,rgba(134,201,192,.32),transparent 70%);pointer-events:none;z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:7px 14px 7px 8px;border-radius:999px;font-size:.86rem;font-weight:700;color:var(--deep)}
+.pill i{width:28px;height:28px;border-radius:50%;background:var(--salmon);color:#fff;display:grid;place-items:center;font-size:.75rem}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.3rem);font-weight:800;color:var(--deep);margin:22px 0 18px}
+.hero h1 em{font-style:normal;color:var(--river);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;background:var(--glacier);opacity:.6;z-index:-1;border-radius:4px;transform:scaleX(0);transform-origin:left;animation:underline 1s .6s var(--ease) forwards}
+@keyframes underline{to{transform:scaleX(1)}}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-weight:600;margin-bottom:24px}
+.hero-meta span{display:inline-flex;align-items:center;gap:8px}
+.hero-meta i{color:var(--river)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+
+/* Collage */
+.collage{position:relative;height:590px}
+.collage figure{position:absolute;overflow:hidden;border-radius:26px;box-shadow:var(--shadow);cursor:zoom-in;opacity:0;animation:rise 1s var(--ease) forwards;background:var(--mist-2)}
+.collage figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.collage figure:hover img{transform:scale(1.06)}
+.c1{inset:0 0 20% 20%;animation-delay:.1s!important}
+.c2{width:44%;height:42%;left:0;top:6%;animation-delay:.3s!important;border:6px solid var(--mist)}
+.c3{width:50%;height:42%;left:8%;bottom:0;animation-delay:.5s!important;border:6px solid var(--mist)}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.badge-spin{position:absolute;right:-26px;bottom:6%;width:126px;height:126px;border-radius:50%;background:var(--deep);color:var(--mist);display:grid;place-items:center;z-index:3;box-shadow:var(--shadow)}
+.badge-spin svg{position:absolute;inset:0;animation:spin 18s linear infinite}
+.badge-spin text{font-family:var(--body);font-size:9.2px;font-weight:800;letter-spacing:.2em;fill:var(--glacier);text-transform:uppercase}
+.badge-spin b{font-family:var(--display);font-size:1.7rem;line-height:1}
+.badge-spin div{text-align:center}
+.badge-spin small{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Quick bar */
+.search-row{margin-top:46px;opacity:0;animation:rise .9s .6s var(--ease) forwards}
+.quick{background:#fff;border-radius:24px;padding:12px;display:grid;grid-template-columns:1.1fr 1.1fr 1fr 1fr auto;box-shadow:var(--shadow);border:1px solid var(--line);width:100%}
+.quick label{display:flex;align-items:center;gap:14px;padding:12px 18px;border-radius:16px;cursor:pointer;transition:background .25s;position:relative;min-width:0}
+.quick label+label::before{content:"";position:absolute;left:0;top:22%;bottom:22%;width:1px;background:var(--line)}
+.quick label:hover{background:var(--mist)}
+.quick label>i{width:42px;height:42px;border-radius:12px;background:var(--mist);color:var(--river);display:grid;place-items:center;flex:none;transition:background .25s,color .25s}
+.quick label:hover>i,.quick label:focus-within>i{background:var(--deep);color:var(--glacier)}
+.quick .fld{display:flex;flex-direction:column;min-width:0;flex:1}
+.quick small{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.quick select,.quick input{border:0;background:transparent;font-weight:700;font-size:1rem;padding:3px 0;outline:none;width:100%;cursor:pointer;color:var(--ink)}
+.quick .btn{border-radius:18px;padding:0 30px;font-size:1rem;margin-left:8px}
+.search-foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;margin-top:14px;padding:0 8px;font-size:.92rem;color:var(--muted);font-weight:600}
+.search-foot span{display:inline-flex;align-items:center;gap:8px}
+.search-foot i{color:var(--river)}
+.search-foot strong{color:var(--deep);font-size:1.05rem}
+
+/* Ribbon */
+.ribbon{background:var(--deep);color:var(--mist);padding:26px 0;position:relative;overflow:hidden}
+.ribbon::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,var(--glacier) 0 22px,transparent 22px 34px);opacity:.25}
+.ribbon ul{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.ribbon li{display:flex;align-items:center;gap:14px}
+.ribbon i{font-size:1.15rem;color:var(--glacier);width:44px;height:44px;border-radius:14px;background:rgba(134,201,192,.13);display:grid;place-items:center;flex:none;transition:transform .4s var(--ease)}
+.ribbon li:hover i{transform:translateY(-3px) rotate(-6deg)}
+.ribbon b{font-family:var(--display);font-size:1.25rem;display:block;line-height:1.15}
+.ribbon span{font-size:.84rem;opacity:.75}
+
+/* Gallery */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
+.tile{position:relative;overflow:hidden;border-radius:var(--radius);cursor:zoom-in;background:var(--mist-2);border:0;padding:0}
+.tile.big{grid-column:span 2;grid-row:span 2}
+.tile.tall{grid-row:span 2}
+.tile.wide{grid-column:span 2}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.tile:hover img{transform:scale(1.07)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(10,28,26,.72));opacity:0;transition:opacity .4s}
+.tile .cap{position:absolute;left:14px;bottom:12px;right:14px;display:flex;justify-content:space-between;align-items:center;color:#fff;font-weight:700;font-size:.9rem;opacity:0;transform:translateY(8px);transition:all .4s var(--ease);z-index:2;text-align:left}
+.tile:hover::after,.tile:focus-visible::after{opacity:1}
+.tile:hover .cap,.tile:focus-visible .cap{opacity:1;transform:none}
+.gal-note{display:flex;justify-content:center;margin-top:30px}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,22,20,.95);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-width:min(1200px,92vw);max-height:80vh;border-radius:14px;object-fit:contain;transition:opacity .25s}
+.lb-bar{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;display:flex;gap:18px;align-items:center;font-weight:700;background:rgba(255,255,255,.08);padding:10px 18px;border-radius:999px;white-space:nowrap;font-size:.92rem}
+.lb-btn{position:absolute;width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;font-size:1.1rem;transition:background .25s,transform .25s}
+.lb-btn:hover{background:var(--salmon);transform:scale(1.06)}
+.lb-prev{left:22px;top:50%;margin-top:-26px}.lb-next{right:22px;top:50%;margin-top:-26px}.lb-close{right:22px;top:22px}
+
+/* The site */
+.site-sec{background:var(--paper)}
+.site-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.slides{position:relative;aspect-ratio:4/3;border-radius:26px;overflow:hidden;background:var(--mist-2);box-shadow:var(--shadow);position:sticky;top:96px}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .6s,transform 1.2s var(--ease);cursor:zoom-in}
+.slides img.on{opacity:1;transform:none}
+.sl-nav{position:absolute;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--deep);cursor:pointer;transition:transform .25s,background .25s;z-index:2}
+.sl-nav:hover{transform:scale(1.08);background:#fff}
+.sl-prev{left:14px}.sl-next{right:14px}
+.dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;background:rgba(255,255,255,.55);cursor:pointer;transition:width .3s,background .3s;padding:0}
+.dots button.on{width:24px;background:#fff}
+.tag{position:absolute;top:16px;left:16px;z-index:2;background:var(--deep);color:var(--mist);font-size:.8rem;font-weight:800;padding:7px 13px;border-radius:999px;display:flex;gap:8px;align-items:center}
+.info{background:#fff;border-radius:26px;border:1px solid var(--line);overflow:hidden}
+.info-top{padding:28px 28px 0}
+.info-top h3{font-size:1.75rem;font-weight:800;color:var(--deep)}
+.info-top p{color:var(--muted);margin:10px 0 18px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fact{background:var(--mist);border-radius:14px;padding:12px 14px;transition:transform .3s var(--ease)}
+.fact:hover{transform:translateY(-3px)}
+.fact small{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800}
+.fact b{font-family:var(--display);font-size:1.05rem;color:var(--deep)}
+.tabs{display:flex;gap:4px;margin:22px 28px 0;background:var(--mist);padding:5px;border-radius:999px}
+.tabs button{flex:1;border:0;background:transparent;padding:10px 8px;border-radius:999px;font-weight:800;font-size:.88rem;cursor:pointer;color:var(--muted);transition:all .3s var(--ease);display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.tabs button:hover{color:var(--deep)}
+.tabs button[aria-selected="true"]{background:var(--deep);color:var(--mist)}
+.panel{padding:22px 28px 26px;display:none}
+.panel.on{display:block;animation:fadeUp .45s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+.ticks li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:.92rem;font-weight:600;align-items:start}
+.ticks i{color:var(--river);margin-top:4px}
+.ticks li.no{color:var(--muted)}
+.ticks li.no i{color:var(--muted)}
+.ticks li.warn i{color:var(--salmon)}
+.info-cta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);padding:20px 28px}
+.info-cta .from{margin-right:auto;color:var(--muted);font-size:.9rem}
+.info-cta .from b{font-family:var(--display);font-size:1.6rem;color:var(--deep)}
+
+/* River days */
+.days{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:stretch}
+.days-photo{position:relative;border-radius:28px;overflow:hidden;min-height:540px;box-shadow:var(--shadow);background:var(--mist-2)}
+.days-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.days-photo:hover img{transform:scale(1.05)}
+.float-note{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(249,248,243,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:16px 18px;border-radius:18px;display:flex;gap:14px;align-items:center;font-size:.92rem}
+.float-note i{width:44px;height:44px;border-radius:12px;background:var(--salmon);color:#fff;display:grid;place-items:center;flex:none;font-size:1.05rem}
+.days-copy{display:flex;flex-direction:column;justify-content:center}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.perk{padding:18px;border-radius:18px;background:#fff;border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.perk:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.perk i{font-size:1.25rem;color:var(--salmon);margin-bottom:10px;display:block;transition:transform .4s var(--ease)}
+.perk:hover i{transform:scale(1.15) rotate(-6deg)}
+.perk h4{font-size:1rem;color:var(--deep);margin-bottom:3px}
+.perk p{font-size:.84rem;color:var(--muted);line-height:1.45}
+.near{background:var(--deep);color:var(--mist);border-radius:22px;padding:22px 24px}
+.near h4{font-size:1.05rem;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.near h4 i{color:var(--glacier)}
+.near p{font-size:.88rem;opacity:.75;margin-bottom:14px}
+.near ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.near li{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:rgba(134,201,192,.12);font-weight:700;font-size:.86rem;transition:background .25s,transform .3s var(--ease)}
+.near li:hover{background:rgba(134,201,192,.24);transform:translateY(-2px)}
+.near li i{color:var(--glacier);font-size:.8rem}
+
+/* Host */
+.host{display:grid;grid-template-columns:.8fr 1.2fr;background:#fff;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.host-card{background:var(--deep);color:var(--mist);padding:44px 34px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.host-card::before{content:"\f773";font-family:"Font Awesome 6 Free";font-weight:900;position:absolute;right:-30px;bottom:-50px;font-size:15rem;color:rgba(134,201,192,.06);line-height:1}
+.avatar{position:relative;width:150px;height:150px;margin-bottom:20px}
+.avatar .ring{width:100%;height:100%;border-radius:50%;background:linear-gradient(140deg,var(--glacier),var(--river));display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:3.6rem;color:var(--deep);border:5px solid rgba(255,255,255,.12);transition:transform .6s var(--ease)}
+.avatar .ring{position:relative;overflow:hidden}
+.avatar .ring img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.avatar:hover .ring{transform:scale(1.05) rotate(-4deg)}
+.avatar .vbadge{position:absolute;right:2px;bottom:6px;width:42px;height:42px;border-radius:50%;background:var(--salmon);color:#fff;display:grid;place-items:center;border:3px solid var(--deep)}
+.host-card h3{font-size:2rem;font-weight:800}
+.host-card .role{opacity:.78;margin:6px 0 26px;font-weight:600}
+.host-stats{display:grid;grid-template-columns:repeat(3,1fr);width:100%;border-top:1px solid rgba(255,255,255,.14);padding-top:22px;gap:8px}
+.host-stats b{display:block;font-family:var(--display);font-size:1.45rem;color:var(--glacier);line-height:1.15}
+.host-stats span{font-size:.76rem;opacity:.75}
+.host-body{padding:44px}
+.host-body h2{margin:10px 0 18px}
+.host-body>p{color:var(--muted);margin-bottom:22px}
+.host-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px}
+.host-facts li{display:flex;gap:12px;align-items:center;padding:13px;border-radius:14px;background:var(--mist);font-weight:700;font-size:.9rem;transition:transform .3s var(--ease)}
+.host-facts li:hover{transform:translateY(-3px)}
+.host-facts i{width:36px;height:36px;border-radius:10px;background:#fff;color:var(--salmon);display:grid;place-items:center;flex:none}
+.host-say{border-left:3px solid var(--glacier);padding:4px 0 4px 18px;margin-bottom:28px}
+.host-say p{font-family:var(--display);font-size:1.2rem;font-weight:700;color:var(--deep);margin:0 0 4px}
+.host-say small{color:var(--muted);font-weight:600}
+
+/* Reviews */
+.reviews{background:var(--deep);color:var(--mist);overflow:hidden}
+.reviews h2{color:var(--mist)}
+.reviews .eyebrow{color:var(--glacier)}
+.rv-score{display:flex;align-items:center;gap:16px}
+.rv-score b{font-family:var(--display);font-size:3.8rem;line-height:1;color:var(--glacier)}
+.rv-score span{opacity:.8;font-size:.95rem}
+.rv-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 26px;scrollbar-width:none;margin-inline:calc(50% - 50vw);padding-inline:max(20px,calc(50vw - 600px))}
+.rv-track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(340px,84vw);scroll-snap-align:start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:16px;transition:background .3s,transform .35s var(--ease)}
+.rv:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.rv .stars{color:var(--salmon);font-size:.8rem;letter-spacing:2px}
+.rv .q{font-family:var(--display);font-size:1.22rem;font-weight:700;line-height:1.3}
+.rv footer{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:.88rem}
+.rv .av{width:40px;height:40px;border-radius:50%;background:var(--glacier);color:var(--deep);font-weight:800;display:grid;place-items:center;font-family:var(--display)}
+.rv footer small{display:block;opacity:.65}
+.rv-ctrl{display:flex;gap:10px}
+.rv-ctrl button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:var(--mist);cursor:pointer;transition:all .25s}
+.rv-ctrl button:hover{background:var(--mist);color:var(--deep)}
+
+/* Booking */
+.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}
+.book-side{position:sticky;top:96px;border-radius:26px;overflow:hidden;background:var(--deep);color:var(--mist)}
+.book-side .ph{aspect-ratio:16/10;overflow:hidden;background:var(--deep-2)}
+.book-side .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.book-side:hover .ph img{transform:scale(1.05)}
+.sum{padding:26px}
+.sum h3{font-size:1.45rem;margin-bottom:4px}
+.sum .sub{opacity:.75;font-size:.9rem;margin-bottom:18px}
+.sum dl{display:grid;grid-template-columns:1fr auto;gap:10px 16px;font-size:.95rem}
+.sum dt{opacity:.75}.sum dd{font-weight:800;text-align:right}
+.sum .total{border-top:1px solid rgba(255,255,255,.15);margin-top:16px;padding-top:16px;display:flex;justify-content:space-between;align-items:end}
+.sum .total b{font-family:var(--display);font-size:2rem;color:var(--glacier);transition:transform .3s var(--ease)}
+.sum .total b.bump{transform:scale(1.08)}
+.sum .fine{font-size:.78rem;opacity:.65;margin-top:10px}
+form.bk{background:#fff;border-radius:26px;padding:32px;border:1px solid var(--line)}
+.step-h{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--deep);margin:8px 0 16px}
+.step-h span{width:30px;height:30px;border-radius:50%;background:var(--deep);color:var(--glacier);display:grid;place-items:center;font-size:.85rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.row .field{margin-bottom:0}
+.field label,.field .lbl{font-size:.85rem;font-weight:800;color:var(--deep)}
+.field input,.field select,.field textarea{border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--paper);transition:border-color .25s,box-shadow .25s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--river);box-shadow:0 0 0 4px rgba(31,107,104,.15)}
+.field .err{font-size:.8rem;color:var(--salmon-dk);display:none;align-items:center;gap:6px;font-weight:600}
+.field.invalid input,.field.invalid textarea{border-color:var(--salmon)}
+.field.invalid .err{display:flex}
+.stepper{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);overflow:hidden}
+.stepper button{width:46px;height:46px;border:0;background:transparent;cursor:pointer;color:var(--deep);transition:background .2s}
+.stepper button:hover:not(:disabled){background:var(--mist)}
+.stepper button:disabled{opacity:.3;cursor:not-allowed}
+.stepper output{flex:1;text-align:center;font-weight:800}
+.hint{font-size:.8rem;color:var(--muted)}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:1.5px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center;cursor:pointer;font-size:.84rem;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:6px;transition:all .25s var(--ease)}
+.seg label i{font-size:1.15rem;color:var(--river)}
+.seg label:hover{border-color:var(--deep);transform:translateY(-2px)}
+.seg input:checked+label{background:var(--deep);color:var(--mist);border-color:var(--deep)}
+.seg input:checked+label i{color:var(--glacier)}
+.seg input:focus-visible+label{outline:3px solid var(--salmon);outline-offset:2px}
+.alert{display:none;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:12px;font-size:.88rem;margin-bottom:14px;font-weight:600}
+.alert.show{display:flex;animation:fadeUp .35s var(--ease)}
+.alert.bad{background:rgba(224,102,63,.12);color:var(--salmon-dk)}
+.alert.info{background:rgba(31,107,104,.1);color:var(--deep)}
+.alert i{margin-top:3px}
+.reveal-box{display:none}
+.reveal-box.show{display:block;animation:fadeUp .35s var(--ease)}
+.check{display:flex;gap:10px;align-items:center;font-weight:700;font-size:.92rem;margin-bottom:14px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--river)}
+.submit{width:100%;padding:17px;font-size:1.02rem;margin-top:6px}
+.done{display:none;text-align:center;padding:26px 6px}
+.done.show{display:block;animation:fadeUp .5s var(--ease)}
+.done .ok{width:74px;height:74px;border-radius:50%;background:var(--river);color:#fff;display:grid;place-items:center;font-size:1.8rem;margin:0 auto 18px}
+.done h3{font-size:1.8rem;color:var(--deep);margin-bottom:8px}
+.done p{color:var(--muted);margin:0 auto 22px;max-width:46ch}
+.done .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* Know */
+.here{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#fff;border-radius:24px;padding:30px;border:1px solid var(--line);transition:box-shadow .35s}
+.card:hover{box-shadow:var(--shadow)}
+.card h3{font-size:1.45rem;color:var(--deep);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.card h3 i{color:var(--salmon)}
+.know{list-style:none;display:flex;flex-direction:column;gap:13px}
+.know li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-size:.95rem}
+.know i{color:var(--river);margin-top:5px}
+
+/* Final + footer */
+.final{position:relative;border-radius:30px;overflow:hidden;min-height:380px;display:flex;align-items:center;margin-bottom:60px;background:var(--deep)}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 6s linear}
+.final:hover img{transform:scale(1.06)}
+.final::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,28,.9),rgba(10,30,28,.25));z-index:1}
+.final-in{position:relative;z-index:2;padding:clamp(28px,6vw,64px);color:var(--mist);max-width:620px}
+.final h2{color:var(--mist);margin-bottom:14px}
+.final p{opacity:.85;margin-bottom:26px}
+footer.ft{background:var(--deep);color:rgba(237,241,236,.75);padding:60px 0 0;font-size:.94rem}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(237,241,236,.12)}
+.ft .logo{color:var(--mist);margin-bottom:18px}
+.ft .logo .mark{background:rgba(134,201,192,.15)}
+.ft-brand p{max-width:36ch;margin-bottom:22px}
+.ft-col h4{font-size:1.02rem;color:var(--mist);margin-bottom:16px}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.ft-col li{display:flex;gap:10px;align-items:center}
+.ft-col li i{color:var(--glacier);width:18px}
+.ft a{text-decoration:none;transition:color .2s}
+.ft-col a:hover,.ft-bottom a:hover{color:var(--glacier)}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:22px 0 26px;font-size:.86rem;color:rgba(237,241,236,.6)}
+.ft-bottom a{display:inline-flex;gap:8px;align-items:center}
+
+/* Mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--deep);color:var(--mist);border-radius:20px;padding:10px 10px 10px 20px;display:none;justify-content:space-between;align-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.4);transform:translateY(140%);transition:transform .45s var(--ease)}
+.mbar.show{transform:none}
+.mbar b{font-family:var(--display);font-size:1.3rem}
+.mbar .btn{padding:12px 20px}
+
+/* Reveal */
+.rv-in{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv-in.vis{opacity:1;transform:none}
+
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .collage{height:470px}
+  .badge-spin{right:12px;bottom:-20px}
+  .ribbon ul{grid-template-columns:repeat(3,1fr)}
+  .site-wrap,.days,.book,.here,.host{grid-template-columns:1fr}
+  .slides,.book-side{position:relative;top:0}
+  .days-photo{min-height:0;aspect-ratio:4/3}
+  .bento{grid-template-columns:repeat(3,1fr)}
+  .quick{grid-template-columns:1fr 1fr}
+  .quick label::before{display:none}
+  .quick .btn{grid-column:span 2;padding:16px;margin:6px 0 0}
+  .ft-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav-links{position:fixed;inset:78px 12px auto 12px;flex-direction:column;align-items:stretch;background:var(--paper);padding:14px;border-radius:20px;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all .3s var(--ease)}
+  .nav-links.open{opacity:1;visibility:visible;transform:none}
+  .nav-links a{padding:14px}
+  .nav-links .btn{margin:6px 0 0}
+  .burger{display:grid;place-items:center}
+  .logo small{display:none}
+  .quick{grid-template-columns:1fr}
+  .quick label{padding:10px 12px}
+  .quick .btn{grid-column:auto}
+  .collage{height:370px}
+  .c1{inset:0 0 22% 14%}
+  .ribbon ul{grid-template-columns:1fr 1fr}
+  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .tile.big{grid-column:span 2}
+  .tile .cap{opacity:1;transform:none}
+  .tile::after{opacity:1}
+  .facts{grid-template-columns:1fr 1fr}
+  .ticks{grid-template-columns:1fr}
+  .tabs{margin:20px 18px 0}
+  .tabs button{font-size:.8rem;padding:10px 4px}
+  .tabs button i{display:none}
+  .info-top,.panel{padding-left:20px;padding-right:20px}
+  .info-cta{padding:18px 20px}
+  .perks{grid-template-columns:1fr 1fr}
+  .host-body,.host-card{padding:30px 22px}
+  .host-facts{grid-template-columns:1fr}
+  .host-stats b{font-size:1.15rem;white-space:nowrap}
+  .days-photo{aspect-ratio:4/5}
+  .row{grid-template-columns:1fr}
+  .seg{grid-template-columns:1fr 1fr}
+  form.bk{padding:22px}
+  .ft-grid{grid-template-columns:1fr;gap:30px}
+  footer.ft{padding-bottom:84px}
+  .mbar{display:flex}
+  .lb-prev,.lb-next{top:auto;bottom:80px;margin:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv-in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="River Rejuvenation Retreat home"><span class="mark"><i class="fa-solid fa-water"></i></span><span><b>River Rejuvenation</b><small>Retreat · Skagit River</small></span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#site">The site</a></li>
+      <li><a href="#river">River days</a></li>
+      <li><a href="#host">Your host</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#book" class="btn btn-go">Book your stay</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><i class="fa-solid fa-star"></i>Star Host · 98% of campers recommend</span>
+      <h1>Your own acre on the <em>Skagit River.</em></h1>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i>Concrete, Washington</span>
+        <span><i class="fa-solid fa-water"></i>Private river access</span>
+        <span><i class="fa-solid fa-user-group"></i>Up to 24 guests</span>
+      </div>
+      <p class="lead">Escape the city and relax on a cleared, private acre right on the river. Fish for salmon, swim, kayak or just sit by the water, then come back to a lit gazebo, running water and a campfire.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-go"><i class="fa-solid fa-calendar-check"></i>Check dates &amp; price</a>
+        <a href="#photos" class="btn btn-ghost"><i class="fa-solid fa-images"></i>See the photos</a>
+      </div>
+    </div>
+
+    <div class="collage">
+      <figure class="c1" data-lb="0"><img data-p="0" data-w="1400" alt="The riverside acre at River Rejuvenation Retreat" fetchpriority="high"></figure>
+      <figure class="c2" data-lb="1"><img data-p="1" data-w="800" alt="Around the property"></figure>
+      <figure class="c3" data-lb="4"><img data-p="4" data-w="800" alt="View from the park beach"></figure>
+      <div class="badge-spin" aria-label="98% of campers recommend">
+        <svg viewBox="0 0 126 126" aria-hidden="true"><defs><path id="circ" d="M63,63 m-49,0 a49,49 0 1,1 98,0 a49,49 0 1,1 -98,0"/></defs><text><textPath href="#circ">145 reviews · loved by campers ·</textPath></text></svg>
+        <div><b>98%</b><small>recommend</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap search-row">
+    <form class="quick" id="quick" aria-label="Check dates">
+      <label><i class="fa-solid fa-calendar-day"></i><span class="fld"><small>Check in</small><input type="date" id="qIn"></span></label>
+      <label><i class="fa-solid fa-calendar-check"></i><span class="fld"><small>Check out</small><input type="date" id="qOut"></span></label>
+      <label><i class="fa-solid fa-user"></i><span class="fld"><small>Adults</small><select id="qAd"></select></span></label>
+      <label><i class="fa-solid fa-children"></i><span class="fld"><small>Children</small><select id="qCh"></select></span></label>
+      <button class="btn btn-go" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Check price</button>
+    </form>
+    <div class="search-foot">
+      <span><strong>$120</strong>&nbsp;/ night for the whole site</span>
+      <span><i class="fa-solid fa-fish"></i>Salmon fishing from camp</span>
+      <span><i class="fa-solid fa-paw"></i>Dogs welcome off-leash</span>
+      <span><i class="fa-solid fa-fire"></i>Campfires allowed</span>
+    </div>
+  </div>
+</section>
+
+<!-- RIBBON -->
+<section class="ribbon" aria-label="Quick facts">
+  <ul class="wrap">
+    <li><i class="fa-solid fa-heart"></i><div><b>98%</b><span>of 164 ratings recommend</span></div></li>
+    <li><i class="fa-solid fa-tree"></i><div><b>1 acre</b><span>cleared &amp; private</span></div></li>
+    <li><i class="fa-solid fa-water"></i><div><b>Riverfront</b><span>private river access</span></div></li>
+    <li><i class="fa-solid fa-umbrella-beach"></i><div><b>2 min walk</b><span>to a white sand beach</span></div></li>
+    <li><i class="fa-solid fa-mountain-sun"></i><div><b>&lt; 60 min</b><span>to North Cascades HQ</span></div></li>
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section class="sec" id="photos">
+  <div class="wrap">
+    <div class="sec-head rv-in">
+      <div><span class="eyebrow"><i class="fa-solid fa-camera"></i>Take a look around</span><h2>River, gazebo<br>and room to roam.</h2></div>
+      <p class="lead">Tap any photo to open it full screen. Use your arrow keys or swipe to move between them.</p>
+    </div>
+    <div class="bento" id="bento"></div>
+    <div class="gal-note"><a href="#book" class="btn btn-ghost"><i class="fa-solid fa-calendar-check"></i>Love what you see? Check your dates</a></div>
+  </div>
+</section>
+
+<!-- THE SITE -->
+<section class="sec site-sec" id="site">
+  <div class="wrap">
+    <div class="sec-head rv-in">
+      <div><span class="eyebrow"><i class="fa-solid fa-campground"></i>One site, all yours</span><h2>The whole acre,<br>just for your group.</h2></div>
+      <p class="lead">There's one RV/tent site, so you get the property and the river access to yourselves.</p>
+    </div>
+    <div class="site-wrap">
+      <div class="slides rv-in" id="slides">
+        <span class="tag"><i class="fa-solid fa-caravan"></i>RV or tent site</span>
+        <button class="sl-nav sl-prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="sl-nav sl-next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="dots" id="dots"></div>
+      </div>
+
+      <article class="info rv-in">
+        <div class="info-top">
+          <h3>River Rejuvenation Retreat</h3>
+          <p>A pull-through RV/tent site on loose gravel, with a lit gazebo, picnic tables and a dishwashing station steps from the river.</p>
+          <div class="facts">
+            <div class="fact"><small>Guests</small><b>Up to 24</b></div>
+            <div class="fact"><small>Vehicles</small><b>Up to 10</b></div>
+            <div class="fact"><small>Rigs</small><b>Under 25 ft</b></div>
+            <div class="fact"><small>Check in</small><b>After 2 PM</b></div>
+            <div class="fact"><small>Check out</small><b>Before 11 AM</b></div>
+            <div class="fact"><small>Minimum</small><b>1 night</b></div>
+          </div>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Site details">
+          <button role="tab" aria-selected="true" aria-controls="pAmen" id="tAmen"><i class="fa-solid fa-mug-hot"></i>Amenities</button>
+          <button role="tab" aria-selected="false" aria-controls="pRig" id="tRig" tabindex="-1"><i class="fa-solid fa-caravan"></i>RVs &amp; vehicles</button>
+          <button role="tab" aria-selected="false" aria-controls="pRules" id="tRules" tabindex="-1"><i class="fa-solid fa-clipboard-list"></i>Rules</button>
+        </div>
+        <div class="panel on" id="pAmen" role="tabpanel" aria-labelledby="tAmen">
+          <ul class="ticks">
+            <li><i class="fa-solid fa-lightbulb"></i>Gazebo with lights, table &amp; chairs</li>
+            <li><i class="fa-solid fa-snowflake"></i>Mini fridge with freezer</li>
+            <li><i class="fa-solid fa-glass-water"></i>5-gallon hot &amp; cold water cooler</li>
+            <li><i class="fa-solid fa-faucet-drip"></i>Outdoor sink with running water &amp; soap</li>
+            <li><i class="fa-solid fa-toilet-portable"></i>Porta-potty, sanitized after each group</li>
+            <li><i class="fa-solid fa-utensils"></i>Cooking utensils &amp; dish station</li>
+            <li><i class="fa-solid fa-fire"></i>Fire pit (firewood for sale)</li>
+            <li><i class="fa-solid fa-wifi"></i>WiFi available</li>
+            <li><i class="fa-solid fa-table-cells-large"></i>Picnic tables</li>
+            <li><i class="fa-solid fa-trash-can"></i>Trash bins with heavy-duty bags</li>
+          </ul>
+        </div>
+        <div class="panel" id="pRig" role="tabpanel" aria-labelledby="tRig" hidden>
+          <ul class="ticks">
+            <li><i class="fa-solid fa-circle-check"></i>Trailers, toy haulers &amp; pop-ups</li>
+            <li><i class="fa-solid fa-circle-check"></i>Class A, B &amp; C RVs</li>
+            <li><i class="fa-solid fa-circle-check"></i>Campervans, truck campers &amp; rooftop tents</li>
+            <li><i class="fa-solid fa-circle-check"></i>Pull-through, slideouts fit</li>
+            <li><i class="fa-solid fa-faucet"></i>Water hookup (1 trailer at a time)</li>
+            <li><i class="fa-solid fa-plug"></i>Generators allowed, day or night</li>
+            <li><i class="fa-solid fa-car"></i>2WD accessible, park at the site</li>
+            <li class="warn"><i class="fa-solid fa-triangle-exclamation"></i>Loose gravel, bring leveling blocks</li>
+            <li class="warn"><i class="fa-solid fa-triangle-exclamation"></i>Tight entrance, take it slow</li>
+            <li class="no"><i class="fa-solid fa-ban"></i>No fifth wheels</li>
+            <li class="no"><i class="fa-solid fa-plug-circle-xmark"></i>No electric or sewer hookups</li>
+          </ul>
+        </div>
+        <div class="panel" id="pRules" role="tabpanel" aria-labelledby="tRules" hidden>
+          <ul class="ticks">
+            <li><i class="fa-solid fa-paw"></i>Dogs welcome off-leash in the camp area</li>
+            <li><i class="fa-solid fa-fire-flame-curved"></i>Campfires allowed</li>
+            <li><i class="fa-solid fa-wine-glass"></i>Alcohol OK if used responsibly</li>
+            <li><i class="fa-solid fa-bag-shopping"></i>Pack out your own trash</li>
+            <li><i class="fa-solid fa-house-chimney"></i>Host lives on site with her dogs</li>
+            <li><i class="fa-solid fa-calendar-xmark"></i>Strict cancellation (21 days)</li>
+            <li class="no"><i class="fa-solid fa-wheelchair"></i>Not wheelchair accessible</li>
+          </ul>
+        </div>
+        <div class="info-cta">
+          <span class="from"><b>$120</b> / night</span>
+          <a href="#book" class="btn btn-go">Book this site <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RIVER DAYS -->
+<section class="sec" id="river">
+  <div class="wrap days">
+    <div class="days-photo rv-in">
+      <img data-p="5" data-w="1200" alt="Life by the Skagit River">
+      <div class="float-note"><i class="fa-solid fa-umbrella-beach"></i><div><b>Sand between your toes.</b> A small park with a white sand beach is a 2-minute walk from the property.</div></div>
+    </div>
+    <div class="days-copy rv-in">
+      <span class="eyebrow"><i class="fa-solid fa-sun"></i>River days</span>
+      <h2>Step out of the tent<br>and into the river.</h2>
+      <div class="perks">
+        <div class="perk"><i class="fa-solid fa-fish"></i><h4>Salmon fishing</h4><p>Cast right from your own private river access.</p></div>
+        <div class="perk"><i class="fa-solid fa-person-swimming"></i><h4>Swimming</h4><p>Cool off in the Skagit on warm afternoons.</p></div>
+        <div class="perk"><i class="fa-solid fa-sailboat"></i><h4>Raft &amp; kayak</h4><p>Bring a boat and launch from camp.</p></div>
+        <div class="perk"><i class="fa-solid fa-dove"></i><h4>Bird watching</h4><p>Wild birds along the riverbank.</p></div>
+        <div class="perk"><i class="fa-solid fa-volleyball"></i><h4>Games</h4><p>Volleyball and outdoor games on the acre.</p></div>
+        <div class="perk"><i class="fa-solid fa-person-hiking"></i><h4>Hike &amp; bike</h4><p>North Cascades trails close by.</p></div>
+      </div>
+      <div class="near">
+        <h4><i class="fa-solid fa-mountain-sun"></i>Within an hour's drive</h4>
+        <p>The North Cascades National Park Complex HQ is under 60 minutes away.</p>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i>Baker Lake</li>
+          <li><i class="fa-solid fa-location-dot"></i>Diablo Lake</li>
+          <li><i class="fa-solid fa-location-dot"></i>Ross Lake</li>
+          <li><i class="fa-solid fa-location-dot"></i>Sauk Mountain</li>
+          <li><i class="fa-solid fa-location-dot"></i>Rasar State Park</li>
+          <li><i class="fa-solid fa-location-dot"></i>Cascade Pass</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOST -->
+<section class="sec" id="host" style="padding-top:0">
+  <div class="wrap">
+    <div class="host rv-in">
+      <div class="host-card">
+        <div class="avatar"><div class="ring"><span aria-hidden="true">C</span><img src="https://hipcamp-res.cloudinary.com/image/upload/c_fill,g_face,f_auto,q_auto,h_400,w_400/v1652843340/profile/cgtkldil8fb8w9mffndn.jpg" alt="Cindy H., your host" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://hipcamp-res.cloudinary.com/image/upload/c_fill,f_auto,h_80,w_80/v1652843340/profile/cgtkldil8fb8w9mffndn.jpg'}else{this.remove()}"></div><span class="vbadge" title="Star Host"><i class="fa-solid fa-star"></i></span></div>
+        <h3>Cindy H.</h3>
+        <div class="role"><i class="fa-solid fa-house-chimney"></i> Star Host, living on the property</div>
+        <div class="host-stats">
+          <div><b>145</b><span>Reviews</span></div>
+          <div><b>98%</b><span>Recommend</span></div>
+          <div><b>2022</b><span>Hosting since</span></div>
+        </div>
+      </div>
+      <div class="host-body">
+        <span class="eyebrow"><i class="fa-solid fa-handshake"></i>Meet your host</span>
+        <h2>Say hi to Cindy.</h2>
+        <p>Cindy lives on the property with her dogs and meets every group on arrival. She keeps the porta-potty sanitized after each stay, has the gazebo, fridge and hot water ready, and is happy to help with early or late check-in when she can.</p>
+        <ul class="host-facts">
+          <li><i class="fa-solid fa-star"></i>Star Host</li>
+          <li><i class="fa-solid fa-handshake-angle"></i>Meets you on arrival</li>
+          <li><i class="fa-solid fa-clock"></i>Early / late check-in on request</li>
+          <li><i class="fa-solid fa-fire"></i>Firewood: $40 wheelbarrow or $10 bundle</li>
+        </ul>
+        <div class="host-say">
+          <p>“Cindy is why the phrase ‘hostess with the mostess’ was invented.”</p>
+          <small>Gillian D., August 2026</small>
+        </div>
+        <a href="#book" class="btn btn-go">Book with Cindy <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-in">
+      <div><span class="eyebrow"><i class="fa-solid fa-comment-dots"></i>From real campers</span><h2>145 reviews.<br>Same happy ending.</h2></div>
+      <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+        <div class="rv-score"><b>98%</b><span>recommend<br>164 ratings</span></div>
+        <div class="rv-ctrl"><button id="rvPrev" aria-label="Previous reviews"><i class="fa-solid fa-arrow-left"></i></button><button id="rvNext" aria-label="Next reviews"><i class="fa-solid fa-arrow-right"></i></button></div>
+      </div>
+    </div>
+    <div class="rv-track" id="rvTrack"></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="sec" id="book">
+  <div class="wrap">
+    <div class="sec-head rv-in">
+      <div><span class="eyebrow"><i class="fa-solid fa-calendar-check"></i>Plan your stay</span><h2>Pick your dates.<br>See your price.</h2></div>
+      <p class="lead">Fill in your trip to see what it costs, then send your booking request straight to Cindy.</p>
+    </div>
+    <div class="book">
+      <aside class="book-side" aria-label="Trip summary">
+        <div class="ph"><img data-p="6" data-w="900" alt="The campsite at River Rejuvenation Retreat"></div>
+        <div class="sum" aria-live="polite">
+          <h3>Your river trip</h3>
+          <div class="sub"><i class="fa-solid fa-location-dot"></i> Concrete, WA · hosted by Cindy H.</div>
+          <dl>
+            <dt>Dates</dt><dd id="sDates">Choose dates</dd>
+            <dt id="sNightsL">$120 × 0 nights</dt><dd id="sNights">$0</dd>
+            <dt>Guests</dt><dd id="sGuests">2 adults</dd>
+            <dt>Firewood (optional)</dt><dd id="sWood">None</dd>
+          </dl>
+          <div class="total"><span>Estimated total</span><b id="sTotal">$0</b></div>
+          <p class="fine">Cindy confirms your dates and payment details by email. Strict cancellation: full refund up to 21 days before arrival.</p>
+        </div>
+      </aside>
+
+      <form class="bk" id="bk" novalidate>
+        <div id="formBody">
+          <div class="step-h"><span>1</span>When are you coming?</div>
+          <div class="row">
+            <div class="field" id="fIn"><label for="bIn">Check in</label><input type="date" id="bIn" required><span class="err"><i class="fa-solid fa-circle-exclamation"></i>Pick a check-in date.</span></div>
+            <div class="field" id="fOut"><label for="bOut">Check out</label><input type="date" id="bOut" required><span class="err"><i class="fa-solid fa-circle-exclamation"></i>Check out must be after check in.</span></div>
+          </div>
+          <p class="hint" style="margin:-4px 0 18px"><i class="fa-regular fa-clock"></i> Check in after 2 PM · check out before 11 AM</p>
+
+          <div class="step-h"><span>2</span>Who's coming?</div>
+          <div class="row">
+            <div class="field"><span class="lbl" id="lAd">Adults</span><div class="stepper" role="group" aria-labelledby="lAd"><button type="button" data-step="ad" data-d="-1" aria-label="Fewer adults"><i class="fa-solid fa-minus"></i></button><output id="oAd">2</output><button type="button" data-step="ad" data-d="1" aria-label="More adults"><i class="fa-solid fa-plus"></i></button></div></div>
+            <div class="field"><span class="lbl" id="lCh">Children</span><div class="stepper" role="group" aria-labelledby="lCh"><button type="button" data-step="ch" data-d="-1" aria-label="Fewer children"><i class="fa-solid fa-minus"></i></button><output id="oCh">0</output><button type="button" data-step="ch" data-d="1" aria-label="More children"><i class="fa-solid fa-plus"></i></button></div></div>
+          </div>
+          <p class="hint" id="capHint" style="margin:-4px 0 18px">Up to 24 guests and 10 vehicles in total.</p>
+
+          <div class="step-h"><span>3</span>How are you camping?</div>
+          <div class="seg" role="radiogroup" aria-label="Camping style">
+            <input type="radio" name="style" id="sTent" value="Tent" checked><label for="sTent"><i class="fa-solid fa-tent"></i>Tent</label>
+            <input type="radio" name="style" id="sRv" value="RV or trailer"><label for="sRv"><i class="fa-solid fa-caravan"></i>RV / trailer</label>
+            <input type="radio" name="style" id="sVan" value="Campervan"><label for="sVan"><i class="fa-solid fa-van-shuttle"></i>Campervan</label>
+            <input type="radio" name="style" id="sRoof" value="Rooftop tent"><label for="sRoof"><i class="fa-solid fa-car-side"></i>Rooftop tent</label>
+          </div>
+          <div class="reveal-box" id="rigBox">
+            <div class="field" id="fLen"><label for="bLen">Rig length (feet)</label><input type="number" id="bLen" min="5" max="60" inputmode="numeric" placeholder="e.g. 22"></div>
+            <div class="alert info show" id="rigInfo"><i class="fa-solid fa-circle-info"></i><span>Rigs under 25 ft fit best. No fifth wheels, and no electric or sewer hookups. Water hookup is available.</span></div>
+            <div class="alert bad" id="rigWarn"><i class="fa-solid fa-triangle-exclamation"></i><span>The listing allows rigs under 25 ft and the entrance is tight. Please mention your rig in the message below so Cindy can confirm it fits.</span></div>
+          </div>
+          <label class="check"><input type="checkbox" id="bDog"> <i class="fa-solid fa-dog" style="color:var(--river)"></i> We're bringing a dog</label>
+          <div class="alert info" id="dogInfo"><i class="fa-solid fa-paw"></i><span>Dogs can be off-leash in the camp area. Please pick up after them. Cindy has dogs on the property too.</span></div>
+
+          <div class="step-h"><span>4</span>Want firewood waiting?</div>
+          <div class="row">
+            <label class="check" style="margin:0;align-self:center"><input type="checkbox" id="bBarrow"> Full wheelbarrow · $40</label>
+            <div class="field"><span class="lbl" id="lBun">Bundles · $10 each</span><div class="stepper" role="group" aria-labelledby="lBun"><button type="button" data-step="bun" data-d="-1" aria-label="Fewer bundles"><i class="fa-solid fa-minus"></i></button><output id="oBun">0</output><button type="button" data-step="bun" data-d="1" aria-label="More bundles"><i class="fa-solid fa-plus"></i></button></div></div>
+          </div>
+
+          <div class="step-h"><span>5</span>Your details</div>
+          <div class="row">
+            <div class="field" id="fName"><label for="bName">Full name</label><input id="bName" autocomplete="name" required><span class="err"><i class="fa-solid fa-circle-exclamation"></i>Please add your name.</span></div>
+            <div class="field" id="fMail"><label for="bMail">Email</label><input type="email" id="bMail" autocomplete="email" required><span class="err"><i class="fa-solid fa-circle-exclamation"></i>Enter a valid email.</span></div>
+          </div>
+          <div class="field"><label for="bPhone">Phone <span class="hint">(optional)</span></label><input type="tel" id="bPhone" autocomplete="tel"></div>
+          <div class="field"><label for="bMsg">Message to Cindy <span class="hint">(optional)</span></label><textarea id="bMsg" rows="3" placeholder="Anything Cindy should know: arrival time, questions, special plans"></textarea></div>
+
+          <div class="alert bad" id="formErr"><i class="fa-solid fa-circle-exclamation"></i><span>Please fix the highlighted fields.</span></div>
+          <button class="btn btn-go submit" type="submit"><i class="fa-solid fa-paper-plane"></i>Send booking request</button>
+          <p class="hint" style="text-align:center;margin-top:10px">No payment now. Cindy will reply to confirm your dates.</p>
+        </div>
+        <div class="done" id="done" role="status">
+          <div class="ok"><i class="fa-solid fa-check"></i></div>
+          <h3>Almost done!</h3>
+          <p id="doneTxt"></p>
+          <div class="acts">
+            <a href="#" id="doneLink" class="btn btn-go"><i class="fa-solid fa-envelope"></i>Open email again</a>
+            <button type="button" class="btn btn-ghost" id="editBk"><i class="fa-solid fa-pen"></i>Change trip</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- GOOD TO KNOW -->
+<section class="sec" id="know" style="padding-top:0">
+  <div class="wrap here">
+    <div class="card rv-in">
+      <h3><i class="fa-solid fa-route"></i>Arriving</h3>
+      <ul class="know">
+        <li><i class="fa-solid fa-clock"></i><span>Check in after <b>2 PM</b>, check out before <b>11 AM</b>. Early or late times may be possible, just ask.</span></li>
+        <li><i class="fa-solid fa-handshake-angle"></i><span>Cindy meets you when you arrive and shows you around.</span></li>
+        <li><i class="fa-solid fa-road"></i><span>2WD accessible. The entrance is tight, so take longer rigs in slowly.</span></li>
+        <li><i class="fa-solid fa-square-parking"></i><span>Park right at the site. Room for up to 10 vehicles.</span></li>
+        <li><i class="fa-solid fa-map-location-dot"></i><span>The exact address is shared after you book.</span></li>
+      </ul>
+    </div>
+    <div class="card rv-in">
+      <h3><i class="fa-solid fa-clipboard-check"></i>Good to know</h3>
+      <ul class="know">
+        <li><i class="fa-solid fa-ruler-horizontal"></i><span>Ground is loose gravel and needs some leveling, though there are flat spots.</span></li>
+        <li><i class="fa-solid fa-people-roof"></i><span>A family campsite next door is used on summer weekends only, behind a privacy fence.</span></li>
+        <li><i class="fa-solid fa-bolt"></i><span>No electric or sewer hookups. Generators are fine day or night.</span></li>
+        <li><i class="fa-solid fa-bag-shopping"></i><span>Pack out your own trash. Heavy-duty bags are provided.</span></li>
+        <li><i class="fa-solid fa-calendar-xmark"></i><span>Strict cancellation policy: cancel 21+ days ahead for a full refund.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="wrap">
+  <div class="final rv-in">
+    <img data-p="2" data-w="1600" alt="">
+    <div class="final-in">
+      <span class="eyebrow" style="color:var(--glacier)"><i class="fa-solid fa-moon"></i>Only one site, so dates go fast</span>
+      <h2>Your evening by the Skagit is waiting.</h2>
+      <p>$120 a night for the whole acre, with private river access and room for up to 24 guests.</p>
+      <a href="#book" class="btn btn-go">Book your stay <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <a href="#top" class="logo" aria-label="Back to top"><span class="mark"><i class="fa-solid fa-water"></i></span><span><b>River Rejuvenation</b><small style="color:var(--glacier)">Retreat · Skagit River</small></span></a>
+      <p>A private, cleared acre right on the Skagit River in Concrete, Washington. Hosted by Cindy H.</p>
+      <a href="#book" class="btn btn-go">Book your stay <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="ft-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#site">The site</a></li>
+        <li><a href="#river">River days</a></li>
+        <li><a href="#host">Your host</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Plan your stay</h4>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i><span>Concrete, Washington</span></li>
+        <li><i class="fa-solid fa-calendar-check"></i><a href="#book">Check price &amp; dates</a></li>
+        <li><i class="fa-solid fa-clipboard-check"></i><a href="#know">Arriving &amp; good to know</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ft-bottom">
+    <span>&copy; <span id="yr">2026</span> River Rejuvenation Retreat. All rights reserved.</span>
+    <a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><div><b>$120</b><small style="opacity:.7"> / night</small></div><a href="#book" class="btn btn-go">Book now</a></div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="lb-bar"><span id="lbCap"></span><span id="lbCount" style="opacity:.6"></span></div>
+</div>
+
+<script>
+(function(){
+  const PRICE = 120, MAX_GUESTS = 24;
+  // Booking requests are emailed here. Replace with the host's real email address.
+  const HOST_EMAIL = "bookings@example.com";
+  const $ = id => document.getElementById(id);
+
+  /* ---------- PHOTOS (image CDN, with fallbacks) ---------- */
+  const SLUG = "river-rejuvenation-retreat-river-rejuvenation-retreat-by-cindyland-pacific-northwest.jpg";
+  const PHOTOS = [
+    {v:"v1655796539", id:["k6g5zcmkszfaquh39ir1"], cap:"The riverside acre"},
+    {v:"v1663181915", id:["pou9nvjx6x524sltralb"], cap:"Around the property"},
+    {v:"v1654163140", id:["odcykjdnxnps9moxndm5"], cap:"Camp at night"},
+    {v:"v1687741918", id:["vrk8tkr0z1sajnjsspiz"], cap:"Tons of room for cars and tents"},
+    {v:"v1649845018", id:["n9nwf5zwrhljsfikducm"], cap:"View from the park beach"},
+    {v:"v1652072066", id:["ggpsmpbnnbgnnlwfocem"], cap:"Life by the Skagit"},
+    {v:"v1664689698", id:["kqxe16udboqd9edfcngd"], cap:"The campsite"},
+    {v:"v1657818265", id:["tcatax00f3a8e1unmh6q"], cap:"The campsite"},
+    {v:"v1660160207", id:["c5cbakzyltulsm5qfui9","c5cbakzyltulsw5qfui9"], cap:"The campsite"}
+  ];
+  const urls = (p, w) => {
+    const out = [];
+    p.id.forEach(id => {
+      const path = `${p.v}/campground-photos/${id}/${SLUG}`;
+      out.push(`https://hipcamp-res.cloudinary.com/images/f_auto,c_limit,w_${w},q_auto/${path}`);
+      out.push(`https://dxynby2r8cy0b.cloudfront.net/images/f_auto,c_limit,w_${w},q_auto/${path}`);
+    });
+    return out;
+  };
+  // Load a photo into an <img>, trying each CDN in turn; onFail runs if all fail
+  function setImg(el, i, w, onFail){
+    const list = urls(PHOTOS[i], w); let k = 0;
+    el.onerror = () => { k++; if (k < list.length) el.src = list[k]; else { el.onerror = null; onFail && onFail(); } };
+    el.src = list[0];
+  }
+  document.querySelectorAll("img[data-p]").forEach(el => setImg(el, +el.dataset.p, +el.dataset.w || 1200, () => el.style.visibility = "hidden"));
+
+  /* ---------- NAV ---------- */
+  const nav = $("nav"), burger = $("burger"), menu = $("menu"), mbar = $("mbar");
+  const onScroll = () => {
+    nav.classList.toggle("scrolled", scrollY > 30);
+    const b = $("book").getBoundingClientRect();
+    mbar.classList.toggle("show", scrollY > 500 && !(b.top < innerHeight && b.bottom > 0));
+  };
+  addEventListener("scroll", onScroll, {passive:true}); onScroll();
+  const closeMenu = () => { menu.classList.remove("open"); burger.setAttribute("aria-expanded", false); burger.innerHTML = '<i class="fa-solid fa-bars"></i>'; };
+  burger.addEventListener("click", () => {
+    const o = menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", o);
+    burger.innerHTML = o ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  });
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+
+  /* ---------- GALLERY + LIGHTBOX ---------- */
+  const shapes = ["big","","tall","","wide","","tall","wide",""];
+  const order = [0,3,2,4,1,6,5,7,8];
+  const bento = $("bento");
+  let alive = order.slice();
+  order.forEach((pi, n) => {
+    const b = document.createElement("button");
+    b.className = "tile " + shapes[n];
+    b.setAttribute("aria-label", "Open photo: " + PHOTOS[pi].cap);
+    b.innerHTML = `<img loading="lazy" alt="${PHOTOS[pi].cap}"><span class="cap">${PHOTOS[pi].cap}<i class="fa-solid fa-expand"></i></span>`;
+    setImg(b.querySelector("img"), pi, 900, () => { b.remove(); alive = alive.filter(x => x !== pi); });
+    b.addEventListener("click", () => openLB(alive, alive.indexOf(pi)));
+    bento.appendChild(b);
+  });
+
+  const lb = $("lb"), lbImg = $("lbImg");
+  let lbList = [], lbIdx = 0, lastFocus;
+  function openLB(list, idx){ lbList = list.slice(); lbIdx = Math.max(0, idx); lastFocus = document.activeElement; showLB(); lb.classList.add("open"); document.body.style.overflow = "hidden"; $("lbClose").focus(); }
+  function showLB(){
+    const pi = lbList[lbIdx]; lbImg.style.opacity = 0;
+    setTimeout(() => { lbImg.onload = () => lbImg.style.opacity = 1; setImg(lbImg, pi, 1920); lbImg.alt = PHOTOS[pi].cap; }, 150);
+    $("lbCap").textContent = PHOTOS[pi].cap; $("lbCount").textContent = `${lbIdx+1} / ${lbList.length}`;
+  }
+  const step = d => { lbIdx = (lbIdx + d + lbList.length) % lbList.length; showLB(); };
+  function closeLB(){ lb.classList.remove("open"); document.body.style.overflow = ""; lastFocus && lastFocus.focus(); }
+  $("lbPrev").onclick = () => step(-1);
+  $("lbNext").onclick = () => step(1);
+  $("lbClose").onclick = closeLB;
+  lb.addEventListener("click", e => { if (e.target === lb) closeLB(); });
+  addEventListener("keydown", e => { if (!lb.classList.contains("open")) return; if (e.key === "Escape") closeLB(); if (e.key === "ArrowRight") step(1); if (e.key === "ArrowLeft") step(-1); });
+  let tx = 0; lb.addEventListener("touchstart", e => tx = e.touches[0].clientX, {passive:true});
+  lb.addEventListener("touchend", e => { const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); });
+  document.querySelectorAll(".collage figure").forEach(f => f.addEventListener("click", () => { const pi = +f.dataset.lb; openLB(alive, Math.max(0, alive.indexOf(pi))); }));
+
+  /* ---------- SITE SLIDESHOW ---------- */
+  const SITE = [6,7,8,3,0];
+  const slides = $("slides"), dotsEl = $("dots");
+  let slide = 0;
+  SITE.forEach((pi, k) => {
+    const im = document.createElement("img");
+    im.alt = PHOTOS[pi].cap; if (k) im.loading = "lazy"; if (!k) im.className = "on";
+    setImg(im, pi, 1400, () => im.remove());
+    im.onclick = () => openLB(SITE, slide);
+    slides.insertBefore(im, slides.querySelector(".sl-prev"));
+    const d = document.createElement("button"); d.setAttribute("aria-label", "Photo " + (k+1)); if (!k) d.className = "on";
+    d.onclick = () => go(k); dotsEl.appendChild(d);
+  });
+  const imgs = () => [...slides.querySelectorAll("img")];
+  function go(n){ const all = imgs(); slide = (n + all.length) % all.length; all.forEach((im,k) => im.classList.toggle("on", k===slide)); dotsEl.querySelectorAll("button").forEach((d,k) => d.classList.toggle("on", k===slide)); }
+  slides.querySelector(".sl-prev").onclick = () => go(slide-1);
+  slides.querySelector(".sl-next").onclick = () => go(slide+1);
+  let sx = 0;
+  slides.addEventListener("touchstart", e => sx = e.touches[0].clientX, {passive:true});
+  slides.addEventListener("touchend", e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) go(slide + (dx<0?1:-1)); });
+
+  /* ---------- TABS ---------- */
+  const tabs = [...document.querySelectorAll('.tabs [role="tab"]')];
+  function pick(t){
+    tabs.forEach(x => { const on = x === t; x.setAttribute("aria-selected", on); x.tabIndex = on ? 0 : -1; const p = $(x.getAttribute("aria-controls")); p.hidden = !on; p.classList.toggle("on", on); });
+  }
+  tabs.forEach((t,i) => {
+    t.addEventListener("click", () => pick(t));
+    t.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { const n = tabs[(i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length]; pick(n); n.focus(); } });
+  });
+
+  /* ---------- REVIEWS ---------- */
+  const REVIEWS = [
+    ["Cindy's place was amazing. So relaxing with stunning views.", "Amber H.", "August 2026"],
+    ["Cindy is why the phrase ‘hostess with the mostess’ was invented.", "Gillian D.", "August 2026"],
+    ["Best camping experience ever. Thank you Cindy for your wonderful hospitality!", "Sarah W.", "July 2026"],
+    ["The cleanest out house I ever seen.", "Wendy W.", "July 2026"],
+    ["Cindy went above and beyond to make our stay perfect. The property was beautiful.", "Happy camper", "Verified stay"],
+    ["Perfect space for doing adult summer camp, and the beach space was so perfect.", "Happy camper", "Verified stay"],
+    ["This is an absolutely wonderful and special place. It is very private.", "Happy camper", "Verified stay"]
+  ];
+  const track = $("rvTrack");
+  track.innerHTML = REVIEWS.map(r => `<article class="rv"><div class="stars" aria-label="Recommended"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p class="q">“${r[0]}”</p><footer><span class="av">${r[1][0]}</span><div><b>${r[1]}</b><small><i class="fa-regular fa-calendar"></i> ${r[2]}</small></div></footer></article>`).join("");
+  const rvStep = () => track.querySelector(".rv").offsetWidth + 18;
+  $("rvPrev").onclick = () => track.scrollBy({left:-rvStep(), behavior:"smooth"});
+  $("rvNext").onclick = () => track.scrollBy({left:rvStep(), behavior:"smooth"});
+
+  /* ---------- DATES ---------- */
+  const iso = d => { const z = new Date(d.getTime() - d.getTimezoneOffset()*60000); return z.toISOString().slice(0,10); };
+  const addDays = (v, n) => { const d = new Date(v + "T00:00"); d.setDate(d.getDate() + n); return iso(d); };
+  const today = iso(new Date());
+  const nightsOf = (a, b) => (a && b) ? Math.round((new Date(b+"T00:00") - new Date(a+"T00:00")) / 864e5) : 0;
+  const nice = v => new Date(v + "T00:00").toLocaleDateString(undefined, {month:"short", day:"numeric"});
+  function linkDates(inEl, outEl){
+    inEl.min = today; outEl.min = addDays(today, 1);
+    inEl.addEventListener("change", () => { if (!inEl.value) return; outEl.min = addDays(inEl.value, 1); if (!outEl.value || outEl.value <= inEl.value) outEl.value = addDays(inEl.value, 1); outEl.dispatchEvent(new Event("change")); });
+  }
+  linkDates($("qIn"), $("qOut")); linkDates($("bIn"), $("bOut"));
+
+  /* ---------- BOOKING ---------- */
+  const st = {ad:2, ch:0, bun:0};
+  const lim = {ad:[1, MAX_GUESTS], ch:[0, MAX_GUESTS-1], bun:[0, 20]};
+  // Quick bar selects
+  for (let i = 1; i <= MAX_GUESTS; i++) $("qAd").add(new Option(i + (i>1?" adults":" adult"), i, false, i===2));
+  for (let i = 0; i < MAX_GUESTS; i++) $("qCh").add(new Option(i ? i + (i>1?" children":" child") : "None", i));
+
+  const money = n => "$" + n.toLocaleString();
+  function render(){
+    const tot = st.ad + st.ch;
+    $("oAd").textContent = st.ad; $("oCh").textContent = st.ch; $("oBun").textContent = st.bun;
+    document.querySelectorAll("[data-step]").forEach(b => {
+      const k = b.dataset.step, d = +b.dataset.d, v = st[k] + d;
+      b.disabled = v < lim[k][0] || v > lim[k][1] || (k !== "bun" && d > 0 && tot >= MAX_GUESTS);
+    });
+    $("capHint").textContent = tot >= MAX_GUESTS ? "That's the maximum of 24 guests." : `Up to 24 guests and 10 vehicles in total. ${MAX_GUESTS - tot} spots left.`;
+    const n = Math.max(0, nightsOf($("bIn").value, $("bOut").value));
+    const wood = ($("bBarrow").checked ? 40 : 0) + st.bun * 10;
+    $("sDates").textContent = n ? `${nice($("bIn").value)} – ${nice($("bOut").value)}` : "Choose dates";
+    $("sNightsL").textContent = `$${PRICE} × ${n} night${n===1?"":"s"}`;
+    $("sNights").textContent = money(PRICE * n);
+    $("sGuests").textContent = `${st.ad} adult${st.ad>1?"s":""}` + (st.ch ? `, ${st.ch} child${st.ch>1?"ren":""}` : "");
+    $("sWood").textContent = wood ? money(wood) : "None";
+    const t = $("sTotal"), newT = money(PRICE * n + wood);
+    if (t.textContent !== newT){ t.textContent = newT; t.classList.add("bump"); setTimeout(() => t.classList.remove("bump"), 250); }
+  }
+  document.querySelectorAll("[data-step]").forEach(b => b.addEventListener("click", () => { st[b.dataset.step] += +b.dataset.d; render(); }));
+  ["bIn","bOut","bBarrow"].forEach(id => $(id).addEventListener("change", () => { $(id).closest(".field")?.classList.remove("invalid"); render(); }));
+
+  // Camping style: show rig length for RVs
+  const rigBox = $("rigBox"), bLen = $("bLen");
+  const checkRig = () => { const v = +bLen.value; $("rigWarn").classList.toggle("show", v >= 25); $("rigInfo").classList.toggle("show", !(v >= 25)); };
+  document.querySelectorAll('input[name="style"]').forEach(r => r.addEventListener("change", () => { rigBox.classList.toggle("show", $("sRv").checked); }));
+  bLen.addEventListener("input", checkRig);
+  $("bDog").addEventListener("change", e => $("dogInfo").classList.toggle("show", e.target.checked));
+
+  // Quick bar -> booking form
+  $("quick").addEventListener("submit", e => {
+    e.preventDefault();
+    if ($("qIn").value) { $("bIn").value = $("qIn").value; $("bOut").min = addDays($("qIn").value, 1); }
+    if ($("qOut").value) $("bOut").value = $("qOut").value;
+    st.ad = +$("qAd").value; st.ch = Math.min(+$("qCh").value, MAX_GUESTS - st.ad);
+    render();
+    $("book").scrollIntoView({behavior:"smooth"});
+  });
+
+  // Submit -> booking request email to the host
+  $("bk").addEventListener("input", e => { const f = e.target.closest(".field"); if (f) f.classList.remove("invalid"); });
+  $("bk").addEventListener("submit", e => {
+    e.preventDefault();
+    const a = $("bIn").value, b = $("bOut").value;
+    const badIn = !a || a < today, badOut = !b || b <= a;
+    const badName = !$("bName").value.trim(), badMail = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("bMail").value.trim());
+    $("fIn").classList.toggle("invalid", badIn); $("fOut").classList.toggle("invalid", !badIn && badOut);
+    $("fName").classList.toggle("invalid", badName); $("fMail").classList.toggle("invalid", badMail);
+    const bad = badIn || badOut || badName || badMail;
+    $("formErr").classList.toggle("show", bad);
+    if (bad) { document.querySelector("#bk .invalid input").focus(); return; }
+    const n = nightsOf(a, b);
+    const style = document.querySelector('input[name="style"]:checked').value;
+    const lines = [
+      "Hi Cindy, I'd like to book River Rejuvenation Retreat.", "",
+      `Dates: ${nice(a)} to ${nice(b)} (${n} night${n>1?"s":""})`,
+      `Guests: ${$("sGuests").textContent}`,
+      `Camping: ${style}${$("sRv").checked && $("bLen").value ? ", rig " + $("bLen").value + " ft" : ""}`,
+      `Dog: ${$("bDog").checked ? "Yes" : "No"}`,
+      `Firewood: ${$("sWood").textContent}`,
+      `Estimated total: ${$("sTotal").textContent}`, ""
+    ];
+    if ($("bMsg").value.trim()) lines.push($("bMsg").value.trim(), "");
+    lines.push($("bName").value.trim(), $("bMail").value.trim());
+    if ($("bPhone").value.trim()) lines.push($("bPhone").value.trim());
+    const url = `mailto:${HOST_EMAIL}?subject=${encodeURIComponent(`Booking request: ${nice(a)} – ${nice(b)}, ${$("bName").value.trim()}`)}&body=${encodeURIComponent(lines.join("\n"))}`;
+    $("doneLink").href = url;
+    $("doneTxt").innerHTML = `${nice(a)} – ${nice(b)} · ${n} night${n>1?"s":""} · ${$("sGuests").textContent}.<br>Your email app has opened with the booking request filled in. Just press send and Cindy will reply to confirm.`;
+    $("formBody").style.display = "none"; $("done").classList.add("show");
+    location.href = url;
+  });
+  $("editBk").onclick = () => { $("done").classList.remove("show"); $("formBody").style.display = ""; };
+  render();
+
+  $("yr").textContent = new Date().getFullYear();
+
+  /* ---------- REVEAL ---------- */
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("vis"); io.unobserve(en.target); } }), {threshold:.12});
+  document.querySelectorAll(".rv-in").forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
